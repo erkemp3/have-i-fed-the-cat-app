@@ -5,8 +5,8 @@ const setUpDatabase = () => {
   const connection = new Sequelize(
     "have_i_fed_the_cat_app",
     "root",
-    "password",
-    { host: "localhost", port: 3307, dialect: "mysql" }
+    "supersecret",
+    { host: "127.0.0.1", port: 3307, dialect: "mysql" }
   );
 
   const Cat = CatModel(connection, Sequelize);
